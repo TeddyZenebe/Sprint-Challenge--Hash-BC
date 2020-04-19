@@ -33,12 +33,12 @@ when we approch to the limit of the dinamic array , we need to resize the array 
 
 * Explain how a blockchain is structured. What are the blocks, what is the chain? How is the data organized?
 
+Blockchain is a series of Data block connected via a hash (haashing the adata of previous block and putting it in next block)
 The chain is the structure that contains all of the transactions recorded
 Each link in the chain is called a block and the block has index, proof, timestamp, transaction,and previous hash.
  
 * Explain how proof of work functions. How does it operate. How does this protect the chain from attack. What kind of attack is possible?
 
-Blockchain is a series of Data block connected via a hash (haashing the adata of previous block and putting it in next block)
 Proof of Work is used to confirm transactions and produce new blocks to the chain. It is an arbitrarily difficult problem to solve. 
 Proof of work secures the chain by making it nearly computationally impossible to cheat, because the cheater would have to do a greater amount of work than everyone else.
 
