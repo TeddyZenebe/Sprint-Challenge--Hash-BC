@@ -24,11 +24,23 @@ This sprint challenge is divided up into three parts:  Hash tables coding, block
 
 Explain in detail the workings of a dynamic array:
 * What is the runtime complexity to access an array, add or remove from the front, and add or remove from the back?
-* What is the worse case scenario if you try to extend the storage size of a dynamic array?
 
-Explain how a blockchain is structured. What are the blocks, what is the chain? How is the data organized?
+access an item of an array via its index, or add/remove an item at the end of an array, the complexity is O(1). Whereas, linearly searching through an array via its index has a complexity of O(n). Also add or remove from the front requires reindexing each element that follows it (i.e. removing an element at index 0 requires relabelling element at index 1 as index 0, and so forth), they have a complexity of O(n)
+
+* What is the worse case scenario if you try to extend the storage size of a dynamic array
+
+when we approch to the limit of the dinamic array , we need to resize the array (to expand the array the spot might be taken ). Therefore appending an item to our dynamic array(which is full) forces us to make a new double-size underlying array, that append takes O(n) time. The worest scenario is append become O(n) insted of O(1).
+
+* Explain how a blockchain is structured. What are the blocks, what is the chain? How is the data organized?
+
+The chain is the structure that contains all of the transactions recorded
+Each link in the chain is called a block and the block has index, proof, timestamp, transaction,and previous hash.
  
-Explain how proof of work functions. How does it operate. How does this protect the chain from attack. What kind of attack is possible?
+* Explain how proof of work functions. How does it operate. How does this protect the chain from attack. What kind of attack is possible?
+
+Blockchain is a series of Data block connected via a hash (haashing the adata of previous block and putting it in next block)
+Proof of Work is used to confirm transactions and produce new blocks to the chain. It is an arbitrarily difficult problem to solve. 
+Proof of work secures the chain by making it nearly computationally impossible to cheat, because the cheater would have to do a greater amount of work than everyone else.
 
 ## Project Set Up
 
